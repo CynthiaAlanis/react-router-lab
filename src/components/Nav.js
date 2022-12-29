@@ -4,11 +4,15 @@ const Nav = (props) => {
   return(
     <div className="nav">
       <Link to="/">
-        <div>STOCK PRICES</div>
+        <div>DASHBOARD</div>
       </Link>
       <Link to="/Stock">
-        <div>Stocks</div>
+        <div>STOCKS</div>
       </Link>
+      <Link to="/About">
+        <div>ABOUT</div>
+        </Link>
+
     </div>
   )
 }

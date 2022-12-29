@@ -1,5 +1,5 @@
-const Main = (props) => {
-  return <h1>This is the Main Component</h1>
+const Home = (props) => {
+  return <h1>This is the Home Page</h1>
 }
 
-export default Main
+export default Home

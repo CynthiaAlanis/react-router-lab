@@ -2,21 +2,23 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom"
 import About from "./pages/About"
-import Dashboard from "./pages/Dashboard"
+
 import Home from "./pages/Home"
-import Stock from "./pages/Stock"
+import Stock from "./pages/Dashboard"
+import Nav from "./components/Nav"
+import SingleStock from "./pages/Stock"
 
 function App() {
   // We will use the Route component to specify each route
   return (
     <div className="App">
-      <Nav />
+    <Nav/>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Price" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/Stock" element={<Stock />} />
       </Routes>
+  
     </div>
   )
 }
