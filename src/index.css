@@ -1,5 +1,6 @@
 body{
-  background-image: url(https://i.imgur.com/bRJ9Eki.jpeg) 
+  background-image: url(https://i.imgur.com/bRJ9Eki.jpeg)
+  
 }
 .nav{
   display:flex;
@@ -12,4 +13,11 @@ body{
   border-style:solid;
   border-width: 5px;
  
+}
+
+.stocks{
+display:flex;
+font-size:large;
+font-weight: bold;
+
 }

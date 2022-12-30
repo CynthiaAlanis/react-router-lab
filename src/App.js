@@ -2,11 +2,10 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom"
 import About from "./pages/About"
-
 import Home from "./pages/Home"
 import Stock from "./pages/Dashboard"
 import Nav from "./components/Nav"
-import SingleStock from "./pages/Stock"
+
 
 function App() {
   // We will use the Route component to specify each route
@@ -17,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Stock" element={<Stock />} />
+     
       </Routes>
   
     </div>

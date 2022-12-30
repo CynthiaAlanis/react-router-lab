@@ -14,21 +14,34 @@ const Stocks = (props) => {
     <div className="stocks">
       {stocks.map((stock) => {
         const { name, symbol, lastPrice, change, high, low, open} = stock
+    
 
+
+     
         return (
          
-          <Link to={`/price/${symbol}`}>
-            <div>Company Name: {name}</div>
-            <div>Last Price: {lastPrice}</div>
-            <div>{change}</div>
-            <div>{high}</div>
-            <div>{low}</div>
-            <div>{open}</div>
-          </Link>
-          
+          <Link to={`/stock/${symbol}`}>
+            
+          <ul class='stocks'>
+            <li>Company Name: {name}
+            <br/>
+            Last Price: {lastPrice}
+            <br/>
+            Change: {change}
+            <br/>
+            High: {high}
+            <br/>
+            Low: {low}
+            <br/>
+            Open: {open}
+            <br/>
+            </li>
+           </ul> 
+      </Link>
+        
         )
       })}
-    </div>
+     </div>
   )
 }
 
