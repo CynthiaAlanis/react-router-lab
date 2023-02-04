@@ -29,8 +29,8 @@ console.log(stock);
  
     return (
       <div>
-        {stock === 'null' ? (
-          <h2>Loading...</h2>
+      {stock === 'null' ? (
+        <i class="fa fa-spinner fa-spin" style={{ fontSize:"24px", textAlign: "center", display: 'block'}}></i>
         ) : (
       <div>
         <h1>{symbol}</h1>

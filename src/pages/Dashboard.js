@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import React from "react"
+
+
 const Stocks = (props) => {
   const stocks = [
     {name: "Apple Inc.", symbol: "AAPL", lastPrice: 140.64, change: -0.280000000000001, high: 141.74, low: 140.35, open: 141.5},
@@ -17,7 +19,6 @@ const Stocks = (props) => {
   
      
         return (
-         
           <Link to={`/stocks/${symbol}`}> 
           <ul class='stocks'>
             <li>Company Name: {name}
